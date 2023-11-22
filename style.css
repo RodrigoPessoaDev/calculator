@@ -7,6 +7,11 @@ body {
   background: rgb(214, 118, 118);
 }
 
+h1 {
+  font-size: 2rem;
+  font-family: "Courier New", Courier, monospace;
+}
+
 .container {
   width: 350px;
   height: 500px;
@@ -14,28 +19,25 @@ body {
   border: 3px solid black;
   border-radius: 10px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
 
 .display {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   width: 330px;
   height: 150px;
   border: 2px solid black;
 }
 
-.btnContainer {
-  margin-left: auto;
-  margin-right: auto;
-}
-
 button {
-  width: 60px;
-  height: 60px;
+  width: 70.5px;
+  height: 70.5px;
+  padding: 0;
 }
 
 .btnEqual {
-  flex-grow: 2;
+  flex-grow: 1;
 }
