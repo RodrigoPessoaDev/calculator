@@ -1,4 +1,9 @@
-//Basic Math Functions
+//Variables
+let firstNum;
+let secondNum;
+let operator;
+
+// Functions
 function add(a, b) {
   return a + b;
 }
@@ -15,7 +20,19 @@ function divide(a, b) {
   return a / b;
 }
 
-console.log(add(7, 8));
-console.log(subtract(7, 8));
-console.log(multiply(7, 8));
-console.log(divide(7, 8));
+function operate(a, op, b) {
+  switch (op) {
+    case "+":
+      add(a, b);
+      break;
+    case "-":
+      subtract(a, b);
+      break;
+    case "*":
+      multiply(a, b);
+      break;
+    case "/":
+      divide(a, b);
+      break;
+  }
+}

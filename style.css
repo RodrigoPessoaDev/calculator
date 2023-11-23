@@ -5,11 +5,11 @@ body {
   align-items: center;
   justify-content: center;
   background: rgb(214, 118, 118);
+  font-family: "Courier New", Courier, monospace;
 }
 
 h1 {
   font-size: 2rem;
-  font-family: "Courier New", Courier, monospace;
 }
 
 .container {
@@ -42,12 +42,18 @@ h1 {
 }
 
 .display {
+  padding-right: 3px;
   margin-bottom: 5px;
   margin-top: 10px;
   width: 330px;
   height: 170px;
   background: rgb(47, 47, 87);
   border-radius: 10px;
+  font-size: 2.5rem;
+  color: white;
+  display: flex;
+  justify-content: end;
+  align-items: end;
 }
 
 button {
