@@ -14,7 +14,7 @@ h1 {
 
 .container {
   width: 350px;
-  height: 500px;
+  height: 600px;
   background-color: rgb(37, 37, 78);
   border: 3px solid black;
   border-radius: 10px;
@@ -25,19 +25,48 @@ h1 {
   justify-content: center;
 }
 
+.btnContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.containerNums {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.containerOps {
+  display: flex;
+  flex-direction: column;
+}
+
 .display {
-  margin-bottom: 20px;
+  margin-bottom: 5px;
+  margin-top: 10px;
   width: 330px;
-  height: 150px;
-  border: 2px solid black;
+  height: 170px;
+  background: white;
+  border-radius: 10px;
 }
 
 button {
-  width: 70.5px;
-  height: 70.5px;
+  width: 87.5px;
+  height: 83.1px;
   padding: 0;
+  border: 0px;
+  background: rgb(37, 37, 78);
+  color: white;
+  font-weight: 500;
+  font-size: 1.25rem;
+  border-radius: 5px;
+}
+
+.btnZero,
+.btnEqual {
+  flex-grow: 1;
 }
 
 .btnEqual {
-  flex-grow: 1;
+  background: rgb(214, 118, 118);
 }
