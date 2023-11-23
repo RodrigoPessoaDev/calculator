@@ -21,18 +21,15 @@ function divide(a, b) {
 }
 
 function operate(a, op, b) {
-  switch (op) {
-    case "+":
-      add(a, b);
-      break;
-    case "-":
-      subtract(a, b);
-      break;
-    case "*":
-      multiply(a, b);
-      break;
-    case "/":
-      divide(a, b);
-      break;
+  if (op === "+") {
+    return add(a, b);
+  } else if (op === "-") {
+    return subtract(a, b);
+  } else if (op === "*") {
+    return multiply(a, b);
+  } else if (op === "/") {
+    return divide(a, b);
   }
 }
+
+console.log(operate(2, "+", 5));
