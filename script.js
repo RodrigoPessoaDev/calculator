@@ -33,3 +33,14 @@ function operate(a, op, b) {
 }
 
 console.log(operate(2, "+", 5));
+console.log(operate(50, "/", 5));
+
+const btnEqual = document.querySelector(".btnEqual");
+
+btnEqual.addEventListener("mousedown", (e) => {
+  btnEqual.style.cssText += "background:grey";
+});
+
+btnEqual.addEventListener("mouseup", (e) => {
+  btnEqual.removeAttribute("style");
+});
