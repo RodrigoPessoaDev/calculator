@@ -1,4 +1,5 @@
 //Variables
+const display = document.querySelector(".textDisplay");
 let firstNum;
 let secondNum;
 let operator;
@@ -42,11 +43,13 @@ const btn = document.querySelectorAll(".btn").forEach((element) => {
   });
 });
 
-const Equal = document.querySelector(".btnEqual").getAttribute("value");
-console.log(Equal);
-
 const btnClick = document.querySelectorAll(".btn").forEach((element) => {
   element.addEventListener("click", (e) => {
-    console.log(element.innerHTML);
+    displayValue = element.innerHTML;
+    updateDisplay();
   });
 });
+
+function updateDisplay() {
+  display.textContent = displayValue;
+}
