@@ -62,3 +62,11 @@ const btnClick = document.querySelectorAll(".btn").forEach((element) => {
 document.querySelector(".btnAc").addEventListener("click", (e) => {
   clearDisplay();
 });
+
+/*const btnClick = document.querySelectorAll(".btn").forEach((element) => {
+  element.addEventListener("click", (e) => {
+    displayValue = element.innerHTML;
+
+    updateDisplay();
+  });
+}); */
