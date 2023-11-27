@@ -34,6 +34,14 @@ function operate(a, op, b) {
   }
 }
 
+function updateDisplay() {
+  display.textContent = displayValue;
+}
+
+function clearDisplay() {
+  display.textContent = "";
+}
+
 const btn = document.querySelectorAll(".btn").forEach((element) => {
   element.addEventListener("mousedown", (e) => {
     element.style.cssText += "background:grey";
@@ -46,10 +54,11 @@ const btn = document.querySelectorAll(".btn").forEach((element) => {
 const btnClick = document.querySelectorAll(".btn").forEach((element) => {
   element.addEventListener("click", (e) => {
     displayValue = element.innerHTML;
+
     updateDisplay();
   });
 });
 
-function updateDisplay() {
-  display.textContent = displayValue;
-}
+document.querySelector(".btnAc").addEventListener("click", (e) => {
+  clearDisplay();
+});
