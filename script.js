@@ -2,6 +2,7 @@
 let firstNum;
 let secondNum;
 let operator;
+let displayValue;
 
 // Functions
 function add(a, b) {
@@ -38,5 +39,14 @@ const btn = document.querySelectorAll(".btn").forEach((element) => {
   });
   element.addEventListener("mouseup", (e) => {
     element.removeAttribute("style");
+  });
+});
+
+const Equal = document.querySelector(".btnEqual").getAttribute("value");
+console.log(Equal);
+
+const btnClick = document.querySelectorAll(".btn").forEach((element) => {
+  element.addEventListener("click", (e) => {
+    console.log(element.innerHTML);
   });
 });
