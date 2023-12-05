@@ -52,6 +52,27 @@ h1 {
   font-size: 2.5rem;
   color: white;
   display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+}
+
+.textDisplay {
+  width: 250px;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+}
+
+.expression,
+.resultDisplay {
+  height: 40px;
+  width: 300px;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
   justify-content: end;
   align-items: end;
 }
