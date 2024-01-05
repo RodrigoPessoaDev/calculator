@@ -1,4 +1,4 @@
-//Variables
+// Variables
 const display = document.querySelector(".textDisplay");
 const expressionDisplay = document.querySelector(".expression");
 const resultFinal = document.querySelector(".resultDisplay");
@@ -9,33 +9,6 @@ let displayValue;
 let expressionValue;
 
 // Functions
-function add(a, b) {
-  return a + b;
-}
-
-function subtract(a, b) {
-  return a - b;
-}
-
-function multiply(a, b) {
-  return a * b;
-}
-
-function divide(a, b) {
-  return a / b;
-}
-
-function operate(a, op, b) {
-  if (op === "+") {
-    return add(a, b);
-  } else if (op === "-") {
-    return subtract(a, b);
-  } else if (op === "*") {
-    return multiply(a, b);
-  } else if (op === "/") {
-    return divide(a, b);
-  }
-}
 
 function updateDisplay() {
   display.textContent = displayValue;
@@ -89,6 +62,7 @@ function calc(equation) {
   return result;
 }
 
+//Changing button colors when clicked
 const btn = document.querySelectorAll(".btn, .btnEqual").forEach((element) => {
   element.addEventListener("mousedown", (e) => {
     element.style.cssText += "background:grey";
@@ -98,6 +72,7 @@ const btn = document.querySelectorAll(".btn, .btnEqual").forEach((element) => {
   });
 });
 
+//When a button is clicked it appears on the display and refreshes it
 const btnClick = document.querySelectorAll(".btn").forEach((element) => {
   element.addEventListener("click", (e) => {
     displayValue = element.innerHTML;
@@ -107,6 +82,7 @@ const btnClick = document.querySelectorAll(".btn").forEach((element) => {
   });
 });
 
+//When equal is clicked, perform the calculation and update displays
 const btnEqual = document
   .querySelector(".btnEqual")
   .addEventListener("click", (s) => {
